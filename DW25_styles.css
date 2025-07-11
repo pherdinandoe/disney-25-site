@@ -304,6 +304,17 @@ h4 {
     }
 }
 
+@media (min-width: 1600px) {
+
+    .hero-heading {
+        font-size: 10em;
+    }
+
+    .hero-year {
+        font-size: 8rem;
+    }
+}
+
 /* ===========================
    Home Body Styles
    ===========================
