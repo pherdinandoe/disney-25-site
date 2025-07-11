@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--
+    Disney World Trip 2025 
+    Author: Fernando Bonilla
+    Date:   5/10/2024
+
+    Filename: DW25_home.html
+    -->
+
+    <title>Disney Trip 2025</title>
+    <link rel="icon" href="./logo.png" type="image/png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initital-scale=1" />
+
+    <!-- Custom CSS -->
+    <link href="DW25_styles.css" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-sm bg-light">
+            <div class="container-fluid d-flex flex-sm-row flex-row-reverse">
+                <a class="navbar-brand" href="DW25_home.html">
+                    <img class="img-fluid" src="logo.png" alt="Disney World Trip 2025" style="max-height: 45px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="DW25_home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DW25_timeline.html">Timeline</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DW25_budget.html">Budget</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="DW25_reflections.html">Reflections</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Homepage Banner and Title -->
+        <a href="DW25_home.html" style="text-decoration: none; color: inherit;">
+            <div class="hero">
+
+                <!-- Blurred background layer -->
+                <div class="hero-blur-bg"></div>
+
+                <div class="hero-content-wrapper">
+                    <!-- Picture element to swap images based on screen size -->
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="Images/Home/heroSmall.jpg">
+                        <img src="Images/Home/heroLarge.jpg" alt="Group picture in front of Cinderella's castle." class="hero-image">
+                    </picture>
+                    <!-- Text overlay -->
+                    <div class="hero-text-overlay">
+                        <div class="hero-heading-year-wrapper">
+                            <h1 class="hero-heading">Disney World Trip</h1>
+                            <h2 class="hero-year">2025</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </a>
+        
+        
+    </header>
+
+    <main class="container py-5">
+
+        <!-- Overview of Trip Activities -->
+        <div class="body-section-A rounded">
+
+            <!--dates, group of people, number of pics, number of steps -->
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col d-flex flex-column justify-content-center gap-3 text-center text-md-start">
+                    <h2 class="display-5">A long-awaited journey through Disney's four theme parks.</h2>
+                    <ul class="text-start">
+                        <li>A trip filled with Disney magic, thrilling rides, several tubes of sunscreen, and lots of sweat!</li>
+                        <li>I made this site to practice my HTML and CSS skills while celebrating an awesome trip. The idea was to make a digital scrapbook to remember the trip by. And it took a really long time!</li>
+                    </ul>
+                </div>
+                <div class="col text-center text-md-start">
+                    <div class="row row-cols-1 row-cols-sm-2 justify-content-between">
+                        <div class="col d-flex flex-column">
+                            <h2>🗓️</h2>
+                            <h4><span class="text-bubble text-white orange-shadow">May 15 to 21, 2025</span></h4>
+
+                            <p>A week to soak in all the mouse had to offer.</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2 class="">👯👯‍♂️</h2>
+                            <h4><span class="text-bubble text-white orange-shadow">4 North Carolinians</span></h4>
+                            <p>The best and baddest to come out of Monroe.</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2>📸</h2>
+                            <h4><span class="text-bubble text-white orange-shadow">1 Million Pics</span></h4>
+                            <p>All in the <a href="https://drive.google.com/drive/folders/1cydWr-LOXXCeW1rKLiaOlO5rNNG5DfG2?usp=sharing">cloud</a>!</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2>🚶‍♀️🚶</h2>
+                            <h4><span class="text-bubble text-white orange-shadow">107,386 steps</span></h4>
+                            <p>We came back skinny.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Friends -->
+        <div class="body-section-B rounded">
+            <h2 class="text-left display-5 pb-4">The Crew</h2>
+            <div class="row row-cols-2 row-cols-lg-4 g-lg-5 g-xl-0">
+                <div class="friend-section">
+                    <div class="portrait-wrapper">
+                        <a href="/Images/Home/fer.jpg" target="_blank" rel="noopener">
+                            <img src="/Images/Home/fer.jpg" class="" style="max-width: 100%;" alt="Solo picture of Fernando.">
+                        </a>
+                    </div>
+                    <div class="friend-info">
+                        <h4><span class="text-bubble-B">Fernando</span></h4>
+                        <p>That's me!</p>
+                    </div>
+                </div>
+                <div class="friend-section">
+                    <div class="portrait-wrapper">
+                        <a href="/Images/Home/taylor.jpg" target="_blank" rel="noopener">
+                            <img src="/Images/Home/taylor.jpg" class="" style="max-width: 100%;" alt="Solo picture of Taylor.">
+                        </a>
+                    </div>
+                    <div class="friend-info">
+                        <h4><span class="text-bubble-B">Taylor</span></h4>
+                        <p>Librarian</p>
+                    </div>
+                </div>
+                <div class="friend-section">
+                    <div class="portrait-wrapper">
+                        <a href="/Images/Home/monica.jpg" target="_blank" rel="noopener">
+                            <img src="/Images/Home/monica.jpg" class="" style="max-width: 100%;" alt="Solo picture of Monica.">
+                        </a>
+                    </div>
+                    <div class="friend-info">
+                        <h4><span class="text-bubble-B">Monica</span></h4>
+                        <p>Ex-librarian</p>
+                    </div>
+                </div>
+                <div class="friend-section">
+                    <div class="portrait-wrapper">
+                        <a href="/Images/Home/litzy.jpg" target="_blank" rel="noopener">
+                            <img src="/Images/Home/litzy.jpg" class="" style="max-width: 100%;" alt="Solo picture of Litzy.">
+                        </a>
+                    </div>
+                    <div class="friend-info">
+                        <h4><span class="text-bubble-B">Litzy</span></h4>
+                        <p>Theme Park Fan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Disney Parks -->
+        <div class="body-section-A rounded">
+            
+            <h2 class="text-left display-5 pb-4">The Parks</h2>
+            <div class="scroll-container">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+
+                    <!-- Cards for Each Park -->
+                    <div class="col">
+                        <div class="park-background-wrapper">
+
+                            <div class="card text-white border-0 bg-transparent">
+                                <div class="park-flex-box" style="background-image: url('/Images/Home/hollywoodGroup.jpg');">
+                                    <div class="park-content">
+                                        <h3 class="text-bubble orange-shadow">Hollywood Studios</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="DW25_timeline.html#day-2" class="jump-btn">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="park-background-wrapper">
+
+                            <div class="card text-white border-0 bg-transparent">
+                                <div class="park-flex-box" style="background-image: url('/Images/Home/animalGroup.jpg');">
+                                    <div class="park-content">
+                                        <h3 class="text-bubble orange-shadow">Animal Kingdom</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="DW25_timeline.html#day-3" class="jump-btn">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="park-background-wrapper">
+
+                            <div class="card text-white border-0 bg-transparent">
+                                <div class="park-flex-box" style="background-image: url('/Images/Home/heroSmall.jpg');">
+                                    <div class="park-content">
+                                        <h3 class="text-bubble orange-shadow">Magic Kingdom</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="DW25_timeline.html#day-5" class="jump-btn">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="park-background-wrapper">
+
+                            <div class="card text-white border-0 bg-transparent">
+                                <div class="park-flex-box" style="background-image: url('/Images/Home/EpcotGroup.jpg');">
+                                    <div class="park-content">
+                                        <h3 class="text-bubble orange-shadow">Epcot</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-center">
+                                        <a href="DW25_timeline.html#day-6" class="jump-btn">See More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- Hotel Section -->
+        <div class="body-section-B rounded">
+            <!-- Mobile-only header -->
+            <h2 class="display-5 text-center text-md-start pb-4 d-block d-md-none">All-Star Music Resort</h2>
+
+            <div class="row row-cols-1 row-cols-md-2 align-items-stretch">
+                <!-- Left Column -->
+                <div class="col text-center text-md-start mb-4 mb-md-0 d-flex flex-column justify-content-between">
+                <!-- Desktop-only header -->
+                <h2 class="display-5 pb-4 d-none d-md-block">All-Star Music Resort</h2>
+                
+                    <div class="row row-cols-1 row-cols-sm-2 justify-content-between">
+                        <div class="col d-flex flex-column">
+                            <h2>🎭</h2>
+                            <h4><span class="text-bubble-B">Broadway</span></h4>
+                            <p>... was definitely the hotel's best theme.</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2>🍔</h2>
+                            <h4><span class="text-bubble-B">Blues Burger</span></h4>
+                            <p>... is the best of the Intermission food court (imo!).</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2>🏊</h2>
+                            <h4><span class="text-bubble-B">Two Pools</span></h4>
+                            <p>... with beach balls!</p>
+                        </div>
+                        <div class="col d-flex flex-column">
+                            <h2>🛌</h2>
+                            <h4><span class="text-bubble-B">Comfy Beds</span></h4>
+                            <p>... even the closet bed!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel Column -->
+                <div class="col my-auto">
+                    <div id="hotelCarousel" class="hotel-carousel carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#hotelCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="/Images/Home/hotelLion.jpg" target="_blank" rel="noopener">
+                                    <img src="/Images/Home/hotelLion.jpg" class="w-100" alt="Monica posing in front of a Lion King broadway show sign.">
+                                </a>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <a href="/Images/Home/hotelNight.jpg" target="_blank" rel="noopener">
+                                    <img src="/Images/Home/hotelNight.jpg" class="w-100" alt="A palm-tree lined path at sunset.">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="/Images/Home/hotelJazz.jpg" target="_blank" rel="noopener">
+                                    <img src="/Images/Home/hotelJazz.jpg" class="w-100" alt="A giant outdoor decoration of a man playing a saxophone.">
+                                </a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="/Images/Home/hotelGroup.jpg" target="_blank" rel="noopener">
+                                    <img src="/Images/Home/hotelGroup.jpg" class="w-100" alt="A group picture posing in front of a Frozen broadway show sign.">
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#hotelCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#hotelCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Site Section -->
+        <div class="body-section-A rounded">
+
+            <div class="pb-4">
+                <h2 class="display-5 text-center">This Website</h2>
+                <p class="text-center">Here's what I put in the DW25 site!</p>
+            </div>
+
+            <!-- Bootstrap Accordion -->
+            <div class="accordion site-map-accordion" id="tripAccordion">
+
+                <!-- Timeline -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingTimeline">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimeline" aria-expanded="true" aria-controls="collapseTimeline">
+                        🗓️ Timeline
+                    </button>
+                    </h4>
+                    <div id="collapseTimeline" class="accordion-collapse collapse show" aria-labelledby="headingTimeline">
+                    <div class="accordion-body">
+                        <p>I've mapped out the key moments from our trip and added a bunch of pics.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="DW25_timeline.html" class="jump-btn">See More</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Budget -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingBudget">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBudget" aria-expanded="false" aria-controls="collapseBudget">
+                        💵 Budget
+                    </button>
+                    </h4>
+                    <div id="collapseBudget" class="accordion-collapse collapse" aria-labelledby="headingBudget">
+                    <div class="accordion-body">
+                        <p>I analyzed my spending and figured out exactly how much this trip cost me! </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="DW25_budget.html" class="jump-btn">See More</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Reflections -->
+                <div class="accordion-item">
+                    <h4 class="accordion-header" id="headingReflections">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReflections" aria-expanded="false" aria-controls="collapseReflections">
+                        📔 Reflections
+                    </button>
+                    </h4>
+                    <div id="collapseReflections" class="accordion-collapse collapse" aria-labelledby="headingReflections">
+                    <div class="accordion-body">
+                        <p>We wrote down our thoughts on the trip and our favorite moments.</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="DW25_reflections.html" class="jump-btn">See More</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+
+    </main>
+
+    <!-- Footer -->
+    <div class="container"> 
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-2 border-top"> 
+            <p class="col-md-4 mb-0 text-body-secondary">&copy; 2025 Fernando Bonilla</p> 
+            <a href="DW25_home.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" aria-label="Disney World Trip 2025"> 
+                <img class="img-fluid" src="logo.png" alt="Disney World Trip 2025" style="max-height: 60px;"> 
+            </a> 
+            <ul class="nav col-md-4 justify-content-end"> 
+                <li class="nav-item">
+                    <a href="DW25_home.html" class="nav-link px-2 text-body-secondary">Home</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="DW25_timeline.html" class="nav-link px-2 text-body-secondary">Timeline</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="DW25_budget.html" class="nav-link px-2 text-body-secondary">Budget</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="DW25_reflections.html" class="nav-link px-2 text-body-secondary">Reflections</a>
+                </li>
+            </ul> 
+        </footer> 
+    </div>
+
+    <!-- Bootstrap JS (for interactive components like modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>

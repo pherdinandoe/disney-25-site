@@ -1,0 +1,886 @@
+@charset "utf-8";
+
+/*
+   Disney World Trip 2025 
+   Formatting stylesheet for Disney World Trip site
+   Author: Fernando Bonilla
+   Date:   5/10/2025
+   
+   Filename: DW25_styles.css
+   
+   This file contains the formatting styles used in the Disney World Trip 2025 site
+*/
+
+/* ===========================
+   Global Styles
+   ===========================
+*/
+
+.mouse-memoirs-regular {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+  background-color: whitesmoke !important;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, p, li {
+    color: #333;
+}
+
+h3 {
+    font-size: 2rem !important;
+}
+
+h4 {
+    font-size: 1.8rem !important;
+}
+
+.accordion-button {
+  font-size: 1.5rem !important;
+}
+
+.body-section-A {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #cdefff9b; /* blue body sections */
+}
+
+.body-section-B {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: white; /* grey body sections */
+}
+
+.text-shadow-1 {
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+}
+
+.text-bubble {
+  background-color: #ffb499f1;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.orange-shadow {
+    text-shadow: 1px 1px rgb(220, 83, 33);
+}
+
+.text-bubble-G {
+  background-color: #b9fbc0c7;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.text-bubble-P {
+  background-color: #f2c3f9c7;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.text-bubble-B {
+  background-color: #cdefff;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  max-width: 100%;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 4rem 0;
+}
+
+.svg {
+    width: 60px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Adjust svg size on larger screens */
+@media (min-width: 768px) {
+    .svg {
+        width: 100px;
+    }
+}
+
+
+/* ===========================
+   Home Hero Styles
+   ===========================
+*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-self: center;
+    overflow: hidden;
+    height: auto;
+}
+
+/* Wrapper contains image and text */
+.hero-content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    z-index: 2;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+/* Text overlay styles */
+
+.hero-text-overlay {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+    z-index: 3;
+}
+
+/* Used to line up year */
+.hero-heading-year-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: left;
+}
+
+.hero-heading {
+    font-size: 14vw;
+    margin: 0rem;
+
+    background: linear-gradient(
+        90deg,
+        #ffb499 5%,
+        white 60%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-year {
+    font-size: 11vw;
+    opacity: 0.7;
+    margin-top: -0.6rem;
+    background: linear-gradient(
+        90deg,
+        #4169e1  10%,
+        dodgerblue 90%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translateY(0.25rem);
+}
+
+/* Switch over to alt image for larger screens */
+@media (min-width: 768px) {
+
+    .hero {
+        position: relative;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+  }
+
+    .hero-content-wrapper {
+        width: auto;
+        max-width: 90%;
+        max-height: 90%;
+        aspect-ratio: 16 / 9;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-height: 100%;
+        object-fit: contain;
+        border-radius: 10px;
+    }
+
+    .hero-blur-bg {
+        position: absolute;
+        inset: 0;
+        background: url('Images/Home/heroLarge.jpg') center center / cover no-repeat;
+        filter: blur(20px);
+        transform: scale(1.1);
+        z-index: 0;
+    }
+
+    .hero-heading {
+        font-size: 6rem;
+    }
+
+    .hero-year {
+        font-size: 5rem;
+        margin-top: -1rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .hero-heading {
+        font-size: 7rem;
+    }
+
+    .hero-year {
+        font-size: 6rem;
+        margin-top: -1.5rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .hero-text-overlay {
+        top: 5%;
+    }
+
+    .hero-heading {
+        font-size: 8rem;
+    }
+
+    .hero-year {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .hero-heading {
+        font-size: 8rem;
+    }
+
+    .hero-year {
+        font-size: 7rem;
+    }
+}
+
+/* ===========================
+   Home Body Styles
+   ===========================
+*/
+
+/* Crew section styles */
+
+.portrait-wrapper {
+    width: 75%;
+    max-width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.home-portrait {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.friend-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    gap: 0rem;
+}
+
+/* Text content */
+.friend-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .portrait-wrapper {
+        max-height: 200px;
+        max-width: 200px;
+        margin-bottom: 0rem;
+    }
+
+    .friend-section {
+        gap: 1.5rem;
+    }
+}
+
+/* Image and text on same row for x-large screens */
+/* 
+@media (min-width: 1200px) {
+    .friend-section {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 0rem;
+    }
+
+    .portrait-wrapper {
+        margin-right: 1rem;
+        width: 40%;
+    }
+
+}
+*/
+
+/* Parks section styles */
+
+.scroll-container {
+  overflow-x: visible;
+  white-space: normal;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+.park-flex-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    min-height: 200px;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+    border-radius: 0;
+}
+
+.park-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    gap: 1rem;
+}
+
+.park-content h4 {
+    font-size: 1.6rem;
+    font-weight: 750;
+    margin: 0;
+}
+
+.park-background-wrapper {
+    background-color: white; 
+    border-radius: 0.5rem; 
+    padding: 0rem;
+    overflow: hidden;
+}
+
+/* On medium and up: make scroll box */
+@media (min-width: 768px) {
+    .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+  }
+
+    .scroll-container .col {
+        flex: 0 0 auto;
+        width: 350px;
+        display: inline-block;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .scroll-container .row {
+        flex-wrap: nowrap !important;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .park-flex-box {
+        min-height: 400px;
+        padding: 2rem;
+    }
+}
+
+
+/* Hotel section styles */
+
+.hotel-carousel {
+    height: 300px;
+}
+
+.hotel-carousel .carousel-inner {
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) { 
+
+    .hotel-carousel {
+        height: 375px;
+    }
+
+}
+
+/* Site map styles */
+
+@media (min-width: 768px) {
+
+    .site-map-accordion {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+/* ===========================
+   Timeline Styles
+   ===========================
+*/
+
+/* Jump box styles */
+
+.custom-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.tip-box {
+    width: 40%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: left;
+}
+
+.jump-panel {
+    width: 59.99%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    text-align: center;
+    align-content: center;
+}
+
+#returnButton {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    border: solid;
+    border-radius: 50%;
+    background-color: white;
+    color: skyblue;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+}
+
+
+/* Hide tip box and stack layout on medium and smaller screens */
+@media (max-width: 992px) {
+    .custom-row {
+        flex-direction: column;
+    }
+
+    .tip-box {
+        display: none;
+    }
+
+    .jump-panel {
+        width: 100%;
+    }
+}
+
+.day-box {
+    background-color: #FFD5C2;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    font-weight: 500;
+    min-width: 80px;
+    text-align: center;
+    transition: background-color 0s;
+    text-decoration: none;     /* removes underlines */
+    border: none;              /* removes default button border */
+    color: inherit;            /* prevents unexpected text color */
+    font-family: inherit;      /* keeps font consistent */
+    outline: none;             /* removes default focus ring */
+}
+
+.day-box:hover {
+    background-color: papayawhip;
+    cursor: pointer;
+}
+
+/* Timeline styles */
+
+.timeline-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.day-heading {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: rgb(238, 238, 238);
+}
+
+.timeline-scroll {
+    position: relative;
+    display: block;
+    background: linear-gradient(
+            to bottom,
+            papayawhip 20%,
+            peachpuff 90%,
+            transparent 100%
+        );
+    background-position: top 1rem left 1rem;
+    background-repeat: no-repeat;
+    background-size: 5px 100%;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+.timeline-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-card {
+    margin-left: 2.1rem;
+    width: 85%;
+}
+
+/* Timeline Dot */
+.timeline-dot {
+    position: absolute;
+    left: 0.6rem;
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 3px solid coral;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.card-header {
+    background-color: transparent !important;
+}
+
+.card-img-middle {
+    height: 275px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+.carousel-inner {
+    height: 300px;
+}
+
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 768px) {
+
+    .timeline-row {
+        flex-direction: row;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    .timeline-scroll {
+        position: relative;
+        display: flex;
+        overflow-x: auto;
+        padding-top: 0.5rem;
+        padding-bottom: 0;
+        gap: 1.5rem;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            papayawhip 20%,
+            peachpuff 90%,
+            transparent 100%
+        );
+
+        background-position: top 1.5rem left;
+        background-repeat: no-repeat;
+        background-size: 100% 3px;
+        
+        background-color: white;
+        border-radius: 0.5rem;
+    }
+
+    .timeline-scroll::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .timeline-item {
+        flex: 0 0 auto;
+        position: relative;
+        scroll-snap-align: start;
+    }
+
+    .timeline-card {
+        margin-left: 0;
+        margin-top: 3rem;
+        width: 300px;
+    }
+
+    .timeline-line {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        height: 3px;
+        min-width: max-content;
+        width: 0%;
+        
+    }
+
+    .timeline-dot {
+        position: absolute;
+        top: 1rem;
+        left: 0rem;
+        transform: translateY(-50%);
+    }
+
+    .day-heading {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 0rem;
+        margin-left: 1rem;
+        margin-top: 3rem;
+        height: 50%;
+        flex: 0 0 auto;
+        width: 300px;
+        height: fit-content;
+    }
+
+    .day-heading .list-group {
+        width: 100%;
+    }
+
+}
+
+
+/* ===========================
+   Budget Styles
+   ===========================
+*/
+
+.byday-section-bg {
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='40' opacity='0.8'>🐭</text>\</svg>");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 90px 90px;
+  background-color: lightblue;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.pretrip-section-bg {
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='40' opacity='0.8'>🎟️</text>\</svg>");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 90px 90px;
+  background-color: lightpink;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.total-section-bg {
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='40' opacity='0.8'>💵</text>\</svg>");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 90px 90px;
+  background-color: mediumaquamarine;
+  min-height: 500px;
+}
+
+.category-section-bg {
+  background-image: url("data:image/svg+xml;utf8,\<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'>\<text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-size='40' opacity='0.8'>🧇</text>\</svg>");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 90px 90px;
+  background-color: lemonchiffon;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.budget-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 0 100%;
+    gap: 1rem;
+}
+
+.category-box {
+    flex: 1 1 100%; /* Full width by default */
+}
+
+.cost-background {
+    width: 80%; 
+    height: 150px; 
+    border-radius: 21px 21px 0 0;
+}
+
+.bg-light-translucent {
+    background-color: rgba(255, 255, 255, 0.8); /* light with transparency */
+}
+
+.bg-dark-translucent {
+    background-color: rgba(134, 154, 173, 0.9); /* dark with transparency */
+}
+
+.dollars {
+    font-size: 4em;
+}
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 100%;
+    height: 300px;
+}
+
+.chart {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    height: 200px;
+}
+
+/* Responsive Styles for Larger Screens */
+@media (min-width: 768px) {
+    .budget-box {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+
+    .category-box {
+        flex: 1 1 49%;
+        gap: 1rem;
+    }
+
+    .chart-container {
+        flex: 1 1 45%;
+        max-width: 45%;
+        height: 400px;
+    }
+
+    .chart {
+        padding: 2rem;
+    }
+}
+
+/* ===========================
+   Reflections Styles
+   ===========================
+*/
+
+.jump-header {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.jump-btn {
+    background-color: cornflowerblue; /* Hot pink */
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    align-self: start;
+}
+
+.writer-portrait {
+    border-radius: 10px;
+    width: 90%;
+}
+
+.svg-end {
+    width: 30px;
+}
+
+@media (min-width: 768px) {
+  .card-image {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .jump-reflection {
+    max-width: 300px;
+  }
+}
